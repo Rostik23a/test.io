@@ -1,4 +1,4 @@
-x = 30
-print(format(x, '02x'))
-x = 4
-print(format(x, '02x'))
+string = 'string'
+for i in range(11):
+    string +=str(i)
+print =5 string
