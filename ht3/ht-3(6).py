@@ -6,13 +6,31 @@
 
 
 
+def trash_calc(temp_str):
+    if len(temp_str) < 30:
+        sum_num = 0
+        sum_str = ''
+        for item_num in range(len(temp_str)):
+            if temp_str[item_num].isdigit() == True:
+                sum_num += int(temp_str[item_num])
+        print(sum_num)
+        for item_str in range(len(temp_str)):
+            if temp_str[item_str].isalpha() == True:
+                sum_str += temp_str[item_str]
+        print(sum_str)
+    elif 30 <= len(temp_str) <= 50:
+        kol_num_items = 0
+        kol_str_items = 0
+        for item_num in range(len(temp_str)):
+            if temp_str[item_num].isdigit() == True:
+                kol_num_items += 1
+        print(kol_num_items)
+        for item_str in range(len(temp_str)):
+            if temp_str[item_str].isalpha() == True:
+                kol_str_items += 1
+        print(kol_str_items)
+    elif len(temp_str) > 50:
+        print(temp_str[::-1])
+bang = input('click here, well, іm waiting for you to click the letters here, well, why are you reading me if you had to press something on the keyboard ' )
+trash_calc(bang)
 
-n=input()
-    if len ('x')>=30 and len ('x')<=50:
-         return 
-    elif len ('x')<30:
-        return    
-    elif len ('x')>50:
-        return       
-result =  (int(input("")))
-print  (result) 

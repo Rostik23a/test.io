@@ -9,19 +9,14 @@
 
 
 
+def balansXY(x,y):
+    if x > y:
+        print(f'{x} more than {y} on {x-y}')
+    elif x < y:
+        print(f'{y} more than {x} on {y-x}')
+    else:
+        print(f'{x} equals {y}')
 
-print("Нуль як знак операці"
-      "\n завершить роботу програми")
-while True:
-    s = input("Знак < , >, = : ")
-    if s == '0':
-        break
-    if s in ('<','>''='):
-        x = float(input("x"))
-        y = float(input("y"))
-        if s == '<':
-            print("%.2f" % (x<y))
-        elif s == '>':
-            print("%.2f" % (x>y))
-        elif s == '=':
-            print("%.2f" % (x=y))
+var_in_X = int(input(' select X ')) 
+var_in_Y = int(input(' select Y '))
+balansXY(var_in_X, var_in_Y)
